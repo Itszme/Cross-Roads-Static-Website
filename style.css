@@ -1,0 +1,178 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+#home{
+    background: url(images/thomas-langnes-Wl-jXKQjG6o-unsplash.jpg);
+}
+.logo-Text{
+    font-size: 40px; 
+    font-weight: bold;
+    margin-left: 20px;
+    float: left;
+}
+.logo-Image{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 90px;
+    height: 90px;
+}
+.roads{
+    color: rgb(214, 30, 30);
+}
+
+nav ul{
+    
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    text-decoration: none;
+    background: #087988;
+    color: white;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.home-Background{
+    background: no-repeat;
+    width: 100%;
+    /* background-size: cover; */
+    height: calc(150vh - 80px);
+}
+@media (max-width:1000px){
+    .logo-Text{
+        font-size: 30px;
+    }
+    nav ul{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .logo-Image{
+        width: 70px;
+        height: 70px;
+    }
+    nav ul li{
+        line-height: 40px;
+    }
+    nav ul li a{
+        font-size: 16px;
+        padding: 5px 9px;
+        
+
+    }
+    
+    
+}
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px; 
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+
+    }
+    .logo-Text{
+        font-size: 30px;
+    }
+    .logo-Image{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media (max-width:500px){
+    nav ul li{
+        line-height: 20px;
+    }
+    nav ul li a{
+        font-size: 10px;
+
+    }
+    .logo-Text{
+        font-size: 30px;
+    }
+    .logo-Image{
+        width: 40px;
+        height: 40px;
+    }
+    .home-Background{
+        background: no-repeat;
+        width: 100%;
+        /* background-size: cover; */
+        height: calc(100vh - 80px);
+    }
+
+}
+
+.sub-Heading{
+    text-align: center;
+}
+.web1{
+    color: mediumseagreen;
+}
+.coding{
+    color: rgb(18, 99, 131);
+}
+.web{
+    color: magenta;
+}
+.designing{
+    color: rgb(18, 99, 131);
+
+}
+.challenge{
+    color: rgb(180, 180, 21);
+}
+
