@@ -64,9 +64,10 @@ header,
   body,
   header,
   .view {
-    height: 500px;
+    height: 400px;
   }
 }
+
 @media (min-width: 800px) and (max-width: 850px) {
   html,
   body,
@@ -91,6 +92,14 @@ header,
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
     background: transparent !important;
+  }
+}
+@media (max-width: 1025px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 400px;
   }
 }
 
